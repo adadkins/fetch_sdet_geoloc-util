@@ -1,0 +1,144 @@
+---
+version: 2
+interactions:
+    - id: 0
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: api.openweathermap.org
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers: {}
+        url: http://api.openweathermap.org/geo/1.0/direct?appid=f897a99d971b5eef57be6fafa0d83239&limit=1&q=Los+Angeles%2CUS
+        method: GET
+      response:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        transfer_encoding: []
+        trailer: {}
+        content_length: 957
+        uncompressed: false
+        body: '[{"name":"Los Angeles","local_names":{"ja":"ロサンゼルス","he":"לוס אנג''לס","el":"Λος Άντζελες","lv":"Losandželosa","eo":"Los-Anĝeleso","kn":"ಲೊಸ್ ಆಂಜೆಲೆಸ್","tt":"Лос-Анджелес","gl":"Os Ánxeles","ka":"ლოს-ანჯელესი","ko":"로스앤젤레스","de":"Los Angeles","es":"Los Ángeles","zh":"洛杉矶","pt":"Los Angeles","hi":"लॉस एंजिलस","en":"Los Angeles","oc":"Los Angeles","th":"ลอสแอนเจลิส","pl":"Los Angeles","ru":"Лос-Анджелес","fa":"لوس آنجلس","fr":"Los Angeles","it":"Los Angeles","sr":"Лос Анђелес","uk":"Лос-Анджелес","bn":"লোস আংজেলেস","mi":"Ngā Ānahera","be":"Лос-Анджэлас","ta":"லொஸ் ஆஞ்ஜெலெஸ்","ar":"لوس أنجلس","ba":"Лос-Анджелес"},"lat":34.0536909,"lon":-118.242766,"country":"US","state":"California"}]'
+        headers:
+            Access-Control-Allow-Credentials:
+                - "true"
+            Access-Control-Allow-Methods:
+                - GET, POST
+            Access-Control-Allow-Origin:
+                - '*'
+            Connection:
+                - keep-alive
+            Content-Length:
+                - "957"
+            Content-Type:
+                - application/json; charset=utf-8
+            Date:
+                - Wed, 19 Mar 2025 05:01:01 GMT
+            Server:
+                - openresty
+            X-Cache-Key:
+                - /geo/1.0/direct?limit=1&q=los+angeles%2cus
+        status: 200 OK
+        code: 200
+        duration: 408.823709ms
+    - id: 1
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: api.openweathermap.org
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers: {}
+        url: http://api.openweathermap.org/geo/1.0/direct?appid=f897a99d971b5eef57be6fafa0d83239&limit=1&q=Los+Angeles%2C+CA%2CUS
+        method: GET
+      response:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        transfer_encoding: []
+        trailer: {}
+        content_length: 957
+        uncompressed: false
+        body: '[{"name":"Los Angeles","local_names":{"lv":"Losandželosa","uk":"Лос-Анджелес","ar":"لوس أنجلس","ja":"ロサンゼルス","sr":"Лос Анђелес","fa":"لوس آنجلس","he":"לוס אנג''לס","pl":"Los Angeles","oc":"Los Angeles","it":"Los Angeles","eo":"Los-Anĝeleso","mi":"Ngā Ānahera","el":"Λος Άντζελες","be":"Лос-Анджэлас","ko":"로스앤젤레스","th":"ลอสแอนเจลิส","hi":"लॉस एंजिलस","bn":"লোস আংজেলেস","ba":"Лос-Анджелес","de":"Los Angeles","ta":"லொஸ் ஆஞ்ஜெலெஸ்","pt":"Los Angeles","tt":"Лос-Анджелес","es":"Los Ángeles","ru":"Лос-Анджелес","gl":"Os Ánxeles","kn":"ಲೊಸ್ ಆಂಜೆಲೆಸ್","zh":"洛杉矶","en":"Los Angeles","ka":"ლოს-ანჯელესი","fr":"Los Angeles"},"lat":34.0536909,"lon":-118.242766,"country":"US","state":"California"}]'
+        headers:
+            Access-Control-Allow-Credentials:
+                - "true"
+            Access-Control-Allow-Methods:
+                - GET, POST
+            Access-Control-Allow-Origin:
+                - '*'
+            Connection:
+                - keep-alive
+            Content-Length:
+                - "957"
+            Content-Type:
+                - application/json; charset=utf-8
+            Date:
+                - Wed, 19 Mar 2025 05:01:01 GMT
+            Server:
+                - openresty
+            X-Cache-Key:
+                - /geo/1.0/direct?limit=1&q=los+angeles%2c+ca%2cus
+        status: 200 OK
+        code: 200
+        duration: 231.181916ms
+    - id: 2
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: api.openweathermap.org
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers: {}
+        url: http://api.openweathermap.org/geo/1.0/direct?appid=fake&limit=1&q=FakeCity%2CUS
+        method: GET
+      response:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        transfer_encoding: []
+        trailer: {}
+        content_length: 108
+        uncompressed: false
+        body: '{"cod":401, "message": "Invalid API key. Please see https://openweathermap.org/faq#error401 for more info."}'
+        headers:
+            Access-Control-Allow-Credentials:
+                - "true"
+            Access-Control-Allow-Methods:
+                - GET, POST
+            Access-Control-Allow-Origin:
+                - '*'
+            Connection:
+                - keep-alive
+            Content-Length:
+                - "108"
+            Content-Type:
+                - application/json; charset=utf-8
+            Date:
+                - Wed, 19 Mar 2025 05:01:02 GMT
+            Server:
+                - openresty
+            X-Cache-Key:
+                - /geo/1.0/direct?limit=1&q=fakecity%2cus
+        status: 401 Unauthorized
+        code: 401
+        duration: 43.335042ms

@@ -1,0 +1,97 @@
+---
+version: 2
+interactions:
+    - id: 0
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: api.openweathermap.org
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers: {}
+        url: http://api.openweathermap.org/geo/1.0/zip?appid=f897a99d971b5eef57be6fafa0d83239&zip=90210%2CUS
+        method: GET
+      response:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        transfer_encoding: []
+        trailer: {}
+        content_length: 83
+        uncompressed: false
+        body: '{"zip":"90210","name":"Beverly Hills","lat":34.0901,"lon":-118.4065,"country":"US"}'
+        headers:
+            Access-Control-Allow-Credentials:
+                - "true"
+            Access-Control-Allow-Methods:
+                - GET, POST
+            Access-Control-Allow-Origin:
+                - '*'
+            Connection:
+                - keep-alive
+            Content-Length:
+                - "83"
+            Content-Type:
+                - application/json; charset=utf-8
+            Date:
+                - Wed, 19 Mar 2025 05:01:02 GMT
+            Server:
+                - openresty
+            X-Cache-Key:
+                - /geo/1.0/zip?zip=90210%2cus
+        status: 200 OK
+        code: 200
+        duration: 192.670709ms
+    - id: 1
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 0
+        transfer_encoding: []
+        trailer: {}
+        host: api.openweathermap.org
+        remote_addr: ""
+        request_uri: ""
+        body: ""
+        form: {}
+        headers: {}
+        url: http://api.openweathermap.org/geo/1.0/zip?appid=fake&zip=00000%2CUS
+        method: GET
+      response:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        transfer_encoding: []
+        trailer: {}
+        content_length: 108
+        uncompressed: false
+        body: '{"cod":401, "message": "Invalid API key. Please see https://openweathermap.org/faq#error401 for more info."}'
+        headers:
+            Access-Control-Allow-Credentials:
+                - "true"
+            Access-Control-Allow-Methods:
+                - GET, POST
+            Access-Control-Allow-Origin:
+                - '*'
+            Connection:
+                - keep-alive
+            Content-Length:
+                - "108"
+            Content-Type:
+                - application/json; charset=utf-8
+            Date:
+                - Wed, 19 Mar 2025 05:01:02 GMT
+            Server:
+                - openresty
+            X-Cache-Key:
+                - /geo/1.0/zip?zip=00000%2cus
+        status: 401 Unauthorized
+        code: 401
+        duration: 42.613208ms
