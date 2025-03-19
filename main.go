@@ -28,7 +28,7 @@ func main() {
 
 	for _, v := range searchResults {
 		fmt.Printf(
-			"Search Term:    %s\n"+
+			"Input:    %s\n"+
 				"Name:     %s\n"+
 				"Lat:      %.6f\n"+
 				"Lon:      %.6f\n"+
