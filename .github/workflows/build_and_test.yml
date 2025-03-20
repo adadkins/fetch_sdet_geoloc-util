@@ -12,6 +12,10 @@ on:
 jobs:
 
   build:
+    env:
+      OPEN_MAPS_API_KEY: ${{ secrets.OPEN_MAPS_API_KEY }}
+      OPEM_MAPS_BASE_URL: ${{ secrets.OPEM_MAPS_BASE_URL }}
+    
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
