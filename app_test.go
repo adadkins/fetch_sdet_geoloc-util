@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestAmazonTrucks(t *testing.T) {
+func TestSearchLocationNameOrPostCode(t *testing.T) {
 	t.Run("Can search for a Post code and City name", func(t *testing.T) {
 		//given
 		expectedResults := []types.SearchResult{
