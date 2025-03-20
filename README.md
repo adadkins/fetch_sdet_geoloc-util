@@ -1,4 +1,5 @@
 # FetchSDETWeatherGeocoder
+[![codecov](https://codecov.io/gh/adadkins/fetch_sdet_geoloc-util/graph/badge.svg?token=U6L9WGBPLS)](https://codecov.io/gh/adadkins/fetch_sdet_geoloc-util)
 Fetch.com SDET Take home weather geocoder assignment
 
 # Instructions
